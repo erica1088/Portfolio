@@ -6,12 +6,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="shortcut icon" href="./img/a.png" type="image/x-icon">
+     <script src="http://code.jquery.com/jquery-latest.js"></script>
+     <script src="arriba.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
 <section>
+
     <nav class="nav">
+    
         <div class="nav_container">
             <label for="menu" class="navlabel">
                 <img src="./icons8-men.svg" alt="menu-h" class="nav:img">
@@ -33,9 +38,10 @@
 
 
 <section class="container-text">
+ <div class="gradient-border">
     <div class="text">
         <p>Hello, I'm</p>
-        <h1><strong>Erica Acosta</strong></h1>
+        <h1 class="h1-nombre"><strong>Erica Acosta</strong></h1>
         <p>Designer, Front-end Developer </p>
         <div class="container-btn">
           <div class="img_home">
@@ -44,34 +50,35 @@
         </div>
          </div>
     </div>
+</div>
 </section>
 
 <main class="proyects">
 
     <section class="About" id="SobreMi">
         <h2 class="h2">SOBRE MI</h2> 
-        <p class="parrafo-2">Desarrollara Front End. Mi objetivo es obtener experiencia que puedan desarrollar mi capacidad profesional en el área. Cuento con habilidades de cara a la comunicación, al trabajo en equipo y al aprendizaje rápido.</p>
+        <p class="parrafo-2"><span>Desarrolladora Front end</span> Mi objetivo es obtener experiencia que puedan desarrollar mi capacidad profesional en el área. Cuento con habilidades de cara a la comunicación, al trabajo en equipo y al aprendizaje rápido.</p>
          <h2 class="h2">IDIOMAS</h2>
          <P class="idiomas">Español Nativo</P>
          <p class="idiomas">Inglés B1</p>
     </section>
    
     <section class="Skills" id="Habilidades">
-        <h2>Habilidades</h2>
+        <h2 id="habilidades-h2">Habilidades</h2>
         <img src=".//img/css.png" class="imgh" alt="Skills">
         <img src=".//img/html.png" class="imgh" alt="skills">
         <img src=".//img/js.png" class="imgh" alt="skills">
         <img src=".//img/github.png" class="imgh" alt="skills">
         <img src=".//img/git_original_logo_icon_146509.png" class="imgh" alt="skills">
     </section>
-    <section class="container-proyects" id="Projects">
+    <section class="container-proyects" id="Projectos">
         
         <div class="cards-lolita">
             <img src=".//img/laptop.jpg" class="imglaptop" alt="laptop">
                <h3>Lolita Pasteleria Creativa</h3>
                <div class="parrafo">
                  <p>Web Site creado para Lolita Pasteleria</p>
-                <a href="https://github.com/erica1088/website"><i class="fa-solid fa-code" id="codigo"></i></a>
+                <a href="https://github.com/erica1088/website" class="boton-card"><i class="fa-solid fa-code" id="codigo"></i></a>
                 </div>
         </div>
         <div class="cards-lolita">
@@ -79,7 +86,7 @@
                <h3>Landing Page</h3>
                <div class="parrafo">
                  <P>Landing Page. Proyecto inspirado en inmobiliarias</P>
-                 <a href="https://github.com/erica1088/inmobiliaria"><i class="fa-solid fa-code" id="codigo1"></i></a>
+                 <a href="https://github.com/erica1088/inmobiliaria" class="boton-card"><i class="fa-solid fa-code" id="codigo1"></i></a>
                 </div>
         </div>
     </section>
@@ -87,12 +94,12 @@
     <div class="datos">
         <p class="p-datos"><i class="fa-solid fa-square-phone-flip" id="code2"></i>+54 9 11 6459-5781</p>
         <p class="p-datos"><i class="fa-solid fa-square-envelope" id="code3"></i>acosta.s.erica@gmail.com</p>
-       <p class="p-datos"><i class="fa-solid fa-location-dot" id="code4"></i>Tigre-Provincia de Buenos Aires </i></p>
+       <p class="p-datos"><i class="fa-solid fa-location-dot" id="code4"></i>Tigre-Provincia de Buenos Aires</i></p>
     </div>
 </div>
 
 <div class="container" id="Contacto">  
-    <form action="formulario1">
+    <form method="POST" action="index.php">
         <h2>Contacto</h2>
  
         <input type="text"  name="Nombre" placeholder="Nombre" required>
@@ -122,5 +129,9 @@
     </div>
 <p class="derechos">&copy; Erica Acosta. Todos los derechos reservados.</p>
 </footer>
+<img src="./img/boton-arriba.png" class="ir-arriba" alt="btn-arriba">
+    
+    
+
 </body>
 </html>
